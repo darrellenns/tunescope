@@ -11,3 +11,5 @@ find_package(Jack REQUIRED)
 
 include_directories(${GLUT_INCLUDE_DIR} ${OPENGL_INCLUDE_DIR} ${JACK_INCLUDE_DIR})
 target_link_libraries(tunescope ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} ${JACK_LIBRARIES})
+
+install(TARGETS tunescope DESTINATION bin)
